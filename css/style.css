@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+nav {
+    background-color: #ddd;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer {
+    background-color: #ddd;
+    border-radius: 25px; 
+    display: flex;
+    justify-content: center;
+}
+.splash h1 {
+    color: #aaa;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.splash img {
+    border-radius: 20px;
+}
+.splash p {
+    font-family:"Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+hr {
+    border-style: groove;
+    border-color: #aaa;
+}
+section h2 {
+    font-family:"Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #aaa;
+}
+.edu, .exp, .honors, .skills p{
+    font-family:"Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+ul {
+    font-family:"Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+a {
+    color: #f00050;
+    text-decoration: none;
+    font-size: medium;
+}
+a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.card {
+    border-style: ridge;
+    box-shadow: #aaa;
+    background-color: #ddd;
+    border-radius: 25px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+.card img {
+    border-radius: 30px;
+}
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+
