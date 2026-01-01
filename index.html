@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="header" class="fixed h-[85vh] w-full transition-colors duration-700 bg-black text-white flex flex-col justify-center items-center border-b-8 border-red-600 z-10">
+        <div class="text-center border border-red-600 border-4 p-32 flex flex-col justify-center items-center">
+            <img src="images\austin-profile.jpg" alt="profile-img" class="rounded-full items-center w-48 h-48 object-cover">
+            <h1 class="text-5xl font-bold">Austin Miller</h1>
+            <h2 class="text-xl pt-4">Web/Software Developer</h2>
+        </div>
+        <div class="p-4">
+            <h1 class="text-xl">
+                Highly motivated developer, eager to contribute to team success through hard work, attention to detail, and willingness to learn.
+            </h1>
+        </div>
+    </div>
+    <div class="h-screen">
+        <div id="chevron" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </div>
+    <div id="content" class="relative bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col min-h-screen border-t-8 border-red-600">
+        <div>
+            <h3 class="text-3xl font-bold">About Me</h3>
+        </div>
+        <div>
+            <p>I am a software developer with a passion for creating web applications.</p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
