@@ -26,14 +26,83 @@
             </svg>
         </div>
     </div>
-    <div id="content" class="relative bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col min-h-screen border-t-8 border-red-600">
-        <div>
-            <h3 class="text-3xl font-bold">About Me</h3>
+    <div id="content" class="relative bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col items-center min-h-screen border-t-8 border-red-600 p-4">
+        <div id="about" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
+            <h3 class="text-3xl font-bold text-red-600">About Me</h3>
+            <p class="text-gray-600 mt-6">
+                Full-stack web developer with a Computer Science degree from the University of Georgia and hands-on professional experience building and maintaining Laravel-based applications. I specialize in PHP/Laravel development, database design, and modernizing legacy codebases while collaborating with cross-functional teams to deliver scalable solutions.
+            </p>
         </div>
-        <div>
-            <p>I am a software developer with a passion for creating web applications.</p>
+        <div id="current-role" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
+            <h3 class="text-3xl font-bold w-full text-red-600">Current Role</h3>
+            <div class="flex flex-row">
+                <img src="images/cablesandkits.jpeg" alt="ck" class="rounded-[50px] items-center w-48 h-48 p-6 object-cover">
+                <div class="p-6">
+                    <p class="text-lg font-semibold text-red-600">Cables and Kits</p>
+                    <p class="text-gray-600 font-semibold">Junior Web Developer</p>
+                    <div id="responsibilities">
+                        <ul class="list-disc m-4 text-gray-600">
+                            <li>Develop and maintain hybrid web application combining modern Laravel backend with legacy PHP components for order management, customer relations, and business operations.</li>
+                            <li>Manage feature development lifecycle through GitHub workflows, coordinating with business teams on requirements, code reviews, and deployment of bug fixes and performance improvements.</li>
+                            <li>Refactor legacy codebase to Laravel best practices, including replacing env() calls with config() helpers to enable configuration caching.</li>
+                            <li>Implement full-stack features from database schema design through frontend interfaces, translating business requirements into technical solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div id="tech" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
+            <h3 class="text-3xl font-bold w-full text-red-600">Technology Experience</h3>
+            <div class="flex flex-row justify-between p-6 text-center">
+                <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4">
+                    <h4 class="text-gray-600 font-semibold text-lg">PHP & Laravel</h4>
+                    <ul class="">
+                        <li>Professional experience in PHP and Laravel development</li>
+                        <li>Experience in building scalable and secure web applications</li>
+                        <li>Experience with Laravel's Eloquent ORM and Blade templating engine</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4 text-center">
+                    <p class="text-gray-600 font-semibold text-lg">Java</p>
+                </div>
+            </div>
+        </div>
+        <div id="education" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
+            <h3 class="text-3xl font-bold w-full text-red-600">Education</h3>
+            <div class="flex flex-row">
+                <img src="images/uga.png" alt="UGA" class="rounded-[50px] items-center h-48 p-6 object-cover">
+                <div class="p-6">
+                    <p class="text-lg font-semibold text-red-600">University of Georgia</p>
+                    <p class="text-gray-600 font-semibold">Bachelor of Science in Computer Science</p>
+                    <div id="course-experience">
+                        <p class="text-gray-600 font-semibold mt-4">Course Experience</p>
+                        <ul class="list-disc m-4 text-gray-600">
+                            <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
+                            <li><strong>Web Development:</strong> Gained experience with HTML, CSS, JavaScript, and React, with a final web project using these skills.</li>
+                            <li><strong>Database Management:</strong> Learned about relational databases, hands-on experience with SQL, completing multiple full stack web projects.</li>
+                            <li><strong>Computer Networks:</strong> Studied network architecture, protocols, and security. Mixed this with private studies working towards my CCNA certification.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <img src="https://placehold.co/80x50" alt="placeholder" class="rounded-[50px] items-center h-48 p-6 object-cover">
+                <div class="p-6">
+                    <p class="text-lg font-semibold text-red-600">University of North Georgia</p>
+                    <p class="text-gray-600 font-semibold">Associate of Science Majoring in Computer Science</p>
+                    <div id="course-experience">
+                        <p class="text-gray-600 font-semibold mt-4">Course Experience</p>
+                        <ul class="list-disc m-4 text-gray-600">
+                            <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
+                            <li><strong>Web Development:</strong> Gained experience with HTML, CSS, JavaScript, and React, with a final web project using these skills.</li>
+                            <li><strong>Database Management:</strong> Learned about relational databases, hands-on experience with SQL, completing multiple full stack web projects.</li>
+                            <li><strong>Computer Networks:</strong> Studied network architecture, protocols, and security. Mixed this with private studies working towards my CCNA certification.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
