@@ -6,12 +6,14 @@
     <title>Austin's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="header" class="fixed h-[85vh] w-full transition-colors duration-700 bg-black text-white flex flex-col justify-center items-center border-b-8 border-red-600 z-10">
-        <div class="text-center border border-red-600 border-4 p-32 flex flex-col justify-center items-center">
+<body class="mb-24">
+
+    <div id="header" class="fixed min-h-[85vh] w-full p-8 md:p-16 duration-700 bg-black text-white flex flex-col justify-center items-center border-b-8 border-red-600 z-10">
+        <div class="text-center border border-red-600 border-4 md:p-16 lg:p-16 flex flex-col justify-center items-center">
             <img src="images\austin-profile.jpg" alt="profile-img" class="rounded-full items-center w-48 h-48 object-cover">
             <h1 class="text-5xl font-bold">Austin Miller</h1>
             <h2 class="text-xl pt-4">Web/Software Developer</h2>
+            <p class="mt-auto p-4">austimanmiller@gmail.com &bull; 563-940-4417</p>
         </div>
         <div class="p-4">
             <h1 class="text-xl">
@@ -19,6 +21,7 @@
             </h1>
         </div>
     </div>
+
     <div class="h-screen">
         <div id="chevron" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -26,16 +29,18 @@
             </svg>
         </div>
     </div>
-    <div id="content" class="relative bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col items-center min-h-screen border-t-8 border-red-600 p-4">
+
+    <div id="content" class="relative w-full bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col items-center min-h-screen border-t-8 border-red-600">
         <div id="about" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-3xl font-bold text-red-600">About Me</h3>
+            <h3 class="text-2xl font-bold text-gray-600">About Me</h3>
             <p class="text-gray-600 mt-6">
                 Full-stack web developer with a Computer Science degree from the University of Georgia and hands-on professional experience building and maintaining Laravel-based applications. I specialize in PHP/Laravel development, database design, and modernizing legacy codebases while collaborating with cross-functional teams to deliver scalable solutions.
             </p>
         </div>
+
         <div id="current-role" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-3xl font-bold w-full text-red-600">Current Role</h3>
-            <div class="flex flex-row">
+            <h3 class="text-2xl font-bold w-full text-gray-600">Current Role</h3>
+            <div class="flex flex-row text-center">
                 <img src="images/cablesandkits.jpeg" alt="ck" class="rounded-[50px] items-center w-48 h-48 p-6 object-cover">
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">Cables and Kits</p>
@@ -53,25 +58,33 @@
         </div>
 
         <div id="tech" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-3xl font-bold w-full text-red-600">Technology Experience</h3>
+            <h3 class="text-2xl font-bold w-full text-gray-600">Technology Experience</h3>
             <div class="flex flex-row justify-between p-6 text-center">
                 <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4">
-                    <h4 class="text-gray-600 font-semibold text-lg">PHP & Laravel</h4>
-                    <ul class="">
+                    <h4 class="text-gray-600 font-semibold text-lg text-red-600">PHP & Laravel</h4>
+                    <ul class="text-left list-disc m-4 text-gray-600">
                         <li>Professional experience in PHP and Laravel development</li>
                         <li>Experience in building scalable and secure web applications</li>
                         <li>Experience with Laravel's Eloquent ORM and Blade templating engine</li>
                     </ul>
                 </div>
                 <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4 text-center">
-                    <p class="text-gray-600 font-semibold text-lg">Java</p>
+                    <h4 class="text-gray-600 font-semibold text-lg text-red-600">Java</h4>
+                    <ul class="text-left list-disc m-4 text-gray-600">
+                        <li>Strong foundation in object-oriented programming principles and design patterns</li>
+                        <li>Experience developing applications using Java frameworks including Spring Boot</li>
+                        <li>Proficient in implementing data structures and algorithms for efficient problem-solving</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div id="education" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-3xl font-bold w-full text-red-600">Education</h3>
-            <div class="flex flex-row">
-                <img src="images/uga.png" alt="UGA" class="rounded-[50px] items-center h-48 p-6 object-cover">
+
+        <div id="education" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6 border-b-8 border-red-600">
+            <h3 class="text-2xl font-bold w-full text-gray-600">Education</h3>
+            <div class="flex flex-row text-center border-b-2 border-gray-300 pb-6 mb-6">
+                <div class="w-64 flex-shrink-0 flex items-center justify-center">
+                    <img src="images/uga.png" alt="UGA" class="rounded-[50px] h-48 p-6 object-contain">
+                </div>
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">University of Georgia</p>
                     <p class="text-gray-600 font-semibold">Bachelor of Science in Computer Science</p>
@@ -86,8 +99,11 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row">
-                <img src="https://placehold.co/80x50" alt="placeholder" class="rounded-[50px] items-center h-48 p-6 object-cover">
+
+            <div class="flex flex-row text-center mt-4">
+                <div class="w-64 flex-shrink-0 flex items-center justify-center">
+                    <img src="images/ung.png" alt="placeholder" class="rounded-2xl h-48 p-6 object-contain">
+                </div>
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">University of North Georgia</p>
                     <p class="text-gray-600 font-semibold">Associate of Science Majoring in Computer Science</p>
