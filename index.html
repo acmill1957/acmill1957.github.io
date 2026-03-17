@@ -8,45 +8,45 @@
 </head>
 <body class="mb-24">
 
-    <div id="header" class="fixed min-h-[85vh] w-full p-8 md:p-16 duration-700 bg-black text-white flex flex-col justify-center items-center border-b-8 border-red-600 z-10">
-        <div class="text-center border border-red-600 border-4 md:p-16 lg:p-16 flex flex-col justify-center items-center">
+    <div id="header" class="fixed min-h-[85vh] w-full p-8 md:p-16 duration-700 bg-gradient-to-b from-gray-950 to-black text-white flex flex-col justify-center items-center border-b-4 border-red-600 z-10">
+        <div class="text-center border-2 border-red-600 md:p-16 lg:p-16 flex flex-col justify-center items-center shadow-[0_0_40px_rgba(220,38,38,0.15)]">
             <img src="images\austin-profile.jpg" alt="profile-img" class="rounded-full items-center w-48 h-48 object-cover">
-            <h1 class="text-5xl font-bold">Austin Miller</h1>
-            <h2 class="text-xl pt-4">Web/Software Developer</h2>
-            <p class="mt-auto p-4">austimanmiller@gmail.com &bull; 563-940-4417</p>
+            <h1 class="text-5xl font-bold mt-4 tracking-tight">Austin Miller</h1>
+            <h2 class="pt-3 text-gray-300 font-light tracking-widest uppercase text-sm">Web &amp; Software Developer</h2>
+            <p class="mt-4 p-4 text-gray-400 text-sm">austimanmiller@gmail.com &bull; 563-940-4417</p>
         </div>
-        <div class="p-4">
-            <h1 class="text-xl">
+        <div class="p-4 max-w-2xl">
+            <p class="text-base text-gray-300 text-center leading-relaxed">
                 Highly motivated developer, eager to contribute to team success through hard work, attention to detail, and willingness to learn.
-            </h1>
+            </p>
         </div>
     </div>
 
     <div class="h-screen">
         <div id="chevron" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
         </div>
     </div>
 
-    <div id="content" class="relative w-full bg-white transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col items-center min-h-screen border-t-8 border-red-600">
-        <div id="about" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-2xl font-bold text-gray-600">About Me</h3>
-            <p class="text-gray-600 mt-6">
+    <div id="content" class="relative w-full bg-gray-50 transition-opacity duration-500 z-20 p-4 pb-0 flex flex-col items-center min-h-screen border-t-4 border-red-600">
+        <div id="about" class="flex flex-col bg-white shadow-md rounded-xl w-[75vw] p-8 mt-8 border border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-800 border-l-4 border-red-600 pl-3">About Me</h3>
+            <p class="text-gray-600 mt-5 leading-relaxed">
                 Full-stack web developer with a Computer Science degree from the University of Georgia and hands-on professional experience building and maintaining Laravel-based applications. I specialize in PHP/Laravel development, database design, and modernizing legacy codebases while collaborating with cross-functional teams to deliver scalable solutions.
             </p>
         </div>
 
-        <div id="current-role" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-2xl font-bold w-full text-gray-600">Current Role</h3>
-            <div class="flex flex-row">
-                <img src="images/cablesandkits.jpeg" alt="ck" class="rounded-[50px] items-center w-48 h-48 p-6 object-cover">
+        <div id="current-role" class="flex flex-col bg-white shadow-md rounded-xl w-[75vw] p-8 mt-6 border border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-800 border-l-4 border-red-600 pl-3">Current Role</h3>
+            <div class="flex flex-row mt-4">
+                <img src="images/cablesandkits.jpeg" alt="ck" class="rounded-2xl items-center w-40 h-40 p-4 object-cover self-start">
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">Cables and Kits</p>
-                    <p class="text-gray-600 font-semibold">Junior Web Developer</p>
+                    <p class="text-gray-500 font-medium">Junior Web Developer</p>
                     <div id="responsibilities">
-                        <ul class="list-disc m-4 text-gray-600">
+                        <ul class="list-disc ml-4 mt-3 space-y-2 text-gray-600">
                             <li>Develop and maintain hybrid web application combining modern Laravel backend with legacy PHP components for order management, customer relations, and business operations.</li>
                             <li>Manage feature development lifecycle through GitHub workflows, coordinating with business teams on requirements, code reviews, and deployment of bug fixes and performance improvements.</li>
                             <li>Refactor legacy codebase to Laravel best practices, including replacing env() calls with config() helpers to enable configuration caching.</li>
@@ -57,20 +57,20 @@
             </div>
         </div>
 
-        <div id="tech" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6">
-            <h3 class="text-2xl font-bold w-full text-gray-600">Technology Experience</h3>
-            <div class="flex flex-row justify-between p-6">
-                <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4">
-                    <h4 class="text-gray-600 font-semibold text-lg text-red-600">PHP & Laravel</h4>
-                    <ul class="text-left list-disc m-4 text-gray-600">
+        <div id="tech" class="flex flex-col bg-white shadow-md rounded-xl w-[75vw] p-8 mt-6 border border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-800 border-l-4 border-red-600 pl-3">Technology Experience</h3>
+            <div class="flex flex-row justify-between mt-6 gap-4">
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 w-1/2 hover:shadow-md transition-shadow duration-200">
+                    <h4 class="font-semibold text-lg text-red-600 mb-3">PHP &amp; Laravel</h4>
+                    <ul class="text-left list-disc ml-4 space-y-2 text-gray-600">
                         <li>Professional experience in PHP and Laravel development</li>
                         <li>Experience in building scalable and secure web applications</li>
                         <li>Experience with Laravel's Eloquent ORM and Blade templating engine</li>
                     </ul>
                 </div>
-                <div class="bg-gray-50 border-gray-600 rounded p-6 w-1/2 m-4">
-                    <h4 class="text-gray-600 font-semibold text-lg text-red-600">Java</h4>
-                    <ul class="text-left list-disc m-4 text-gray-600">
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 w-1/2 hover:shadow-md transition-shadow duration-200">
+                    <h4 class="font-semibold text-lg text-red-600 mb-3">Java</h4>
+                    <ul class="text-left list-disc ml-4 space-y-2 text-gray-600">
                         <li>Strong foundation in object-oriented programming principles and design patterns</li>
                         <li>Experience developing applications using Java frameworks including Spring Boot</li>
                         <li>Proficient in implementing data structures and algorithms for efficient problem-solving</li>
@@ -79,18 +79,18 @@
             </div>
         </div>
 
-        <div id="education" class="flex flex-col bg-gray-100 border-gray-300 rounded-lg w-[75vw] p-6 mt-6 border-b-8 border-red-600">
-            <h3 class="text-2xl font-bold w-full text-gray-600">Education</h3>
-            <div class="flex flex-row border-b-2 border-gray-300 pb-6 mb-6">
-                <div class="w-64 flex-shrink-0 flex items-center justify-center">
-                    <img src="images/uga.png" alt="UGA" class="rounded-[50px] h-48 p-6 object-contain">
+        <div id="education" class="flex flex-col bg-white shadow-md rounded-xl w-[75vw] p-8 mt-6 mb-8 border border-gray-200 border-b-4 border-b-red-600">
+            <h3 class="text-2xl font-bold text-gray-800 border-l-4 border-red-600 pl-3">Education</h3>
+            <div class="flex flex-row border-b border-gray-200 pb-8 mb-8 mt-4">
+                <div class="w-48 flex-shrink-0 flex items-center justify-center">
+                    <img src="images/uga.png" alt="UGA" class="rounded-2xl h-36 p-4 object-contain">
                 </div>
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">University of Georgia</p>
-                    <p class="text-gray-600 font-semibold">Bachelor of Science in Computer Science</p>
+                    <p class="text-gray-500 font-medium">Bachelor of Science in Computer Science</p>
                     <div id="course-experience">
-                        <p class="text-gray-600 font-semibold mt-4">Course Experience</p>
-                        <ul class="list-disc m-4 text-gray-600">
+                        <p class="text-gray-700 font-semibold mt-4">Course Experience</p>
+                        <ul class="list-disc ml-4 mt-2 space-y-2 text-gray-600">
                             <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
                             <li><strong>Web Development:</strong> Gained experience with HTML, CSS, JavaScript, and React, with a final web project using these skills.</li>
                             <li><strong>Database Management:</strong> Learned about relational databases, hands-on experience with SQL, completing multiple full stack web projects.</li>
@@ -101,15 +101,15 @@
             </div>
 
             <div class="flex flex-row mt-4">
-                <div class="w-64 flex-shrink-0 flex items-center justify-center">
-                    <img src="images/ung.png" alt="placeholder" class="rounded-2xl h-48 p-6 object-contain">
+                <div class="w-48 flex-shrink-0 flex items-center justify-center">
+                    <img src="images/ung.png" alt="placeholder" class="rounded-2xl h-36 p-4 object-contain">
                 </div>
                 <div class="p-6">
                     <p class="text-lg font-semibold text-red-600">University of North Georgia</p>
-                    <p class="text-gray-600 font-semibold">Associate of Science Majoring in Computer Science</p>
-                    <div id="course-experience">
-                        <p class="text-gray-600 font-semibold mt-4">Course Experience</p>
-                        <ul class="list-disc m-4 text-gray-600">
+                    <p class="text-gray-500 font-medium">Associate of Science Majoring in Computer Science</p>
+                    <div id="course-experience-ung">
+                        <p class="text-gray-700 font-semibold mt-4">Course Experience</p>
+                        <ul class="list-disc ml-4 mt-2 space-y-2 text-gray-600">
                             <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
                             <li><strong>Web Development:</strong> Gained experience with HTML, CSS, JavaScript, and React, with a final web project using these skills.</li>
                             <li><strong>Database Management:</strong> Learned about relational databases, hands-on experience with SQL, completing multiple full stack web projects.</li>
