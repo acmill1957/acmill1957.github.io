@@ -8,11 +8,11 @@
 </head>
 <body class="mb-24">
 
-    <div id="header" class="fixed min-h-[85vh] w-full p-8 md:p-16 duration-700 bg-gradient-to-b from-gray-950 to-black text-white flex flex-col justify-center items-center border-b-4 border-red-600 z-10">
+    <div id="header" class="fixed min-h-[85vh] w-full p-8 md:p-16 duration-700 bg-gradient-to-b from-gray-500 to-black text-white flex flex-col justify-center items-center border-b-4 border-red-600 z-10">
         <div class="text-center border-2 border-red-600 md:p-16 lg:p-16 flex flex-col justify-center items-center shadow-[0_0_40px_rgba(220,38,38,0.15)]">
             <img src="images\austin-profile.jpg" alt="profile-img" class="rounded-full items-center w-48 h-48 object-cover">
             <h1 class="text-5xl font-bold mt-4 tracking-tight">Austin Miller</h1>
-            <h2 class="pt-3 text-gray-300 font-light tracking-widest uppercase text-sm">Web &amp; Software Developer</h2>
+            <h2 class="pt-3 text-gray-300 tracking-widest uppercase text-sm">Web &amp; Software Developer</h2>
             <p class="mt-4 p-4 text-gray-400 text-sm">austin@austinmdev.com</p>
         </div>
         <div class="p-4 max-w-2xl">
@@ -47,10 +47,11 @@
                     <p class="text-gray-500 font-medium">Junior Web Developer</p>
                     <div id="responsibilities">
                         <ul class="list-disc ml-4 mt-3 space-y-2 text-gray-600">
-                            <li>Develop and maintain hybrid web application combining modern Laravel backend with legacy PHP components for order management, customer relations, and business operations.</li>
+                            <li>Develop and maintain hybrid web applications integrating a modern Laravel backend with legacy PHP systems for order management and business operations.</li>
                             <li>Manage feature development lifecycle through GitHub workflows, coordinating with business teams on requirements, code reviews, and deployment of bug fixes and performance improvements.</li>
-                            <li>Refactor legacy codebase to Laravel best practices, including replacing env() calls with config() helpers to enable configuration caching.</li>
-                            <li>Implement full-stack features from database schema design through frontend interfaces, translating business requirements into technical solutions.</li>
+                            <li>Migrate legacy PHP codebase to Laravel, significantly improving maintainability, scalability, and development efficiency; including a codebase-wide refactor replacing direct env() calls with Laravel config() helpers to align with framework best practices.</li>
+                            <li>Implement full-stack features from database schema design through frontend interfaces, translating business requirements into technical solutions, including an end-to-end order file attachment system featuring drag-and-drop uploads, asynchronous XHR file handling, and file serving via AWS S3.</li>
+                            <li>Develop shipping method integrations and fulfillment features, including a customer-supplied label workflow extending the platform's shipping flexibility.</li>
                         </ul>
                     </div>
                 </div>
@@ -77,6 +78,24 @@
                     </ul>
                 </div>
             </div>
+            <div class="flex flex-row justify-between mt-6 gap-4">
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 w-1/2 hover:shadow-md transition-shadow duration-200">
+                    <h4 class="font-semibold text-lg text-red-600 mb-3">Database &amp; Storage</h4>
+                    <ul class="text-left list-disc ml-4 space-y-2 text-gray-600">
+                        <li>Familiarity with database design principles and normalization techniques</li>
+                        <li>Experience writing complex SQL queries and optimizing database performance</li>
+                        <li>Exposure to AWS S3</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 w-1/2 hover:shadow-md transition-shadow duration-200">
+                    <h4 class="font-semibold text-lg text-red-600 mb-3">Development Tools</h4>
+                    <ul class="text-left list-disc ml-4 space-y-2 text-gray-600">
+                        <li>Proficient in using development tools such as Git, Laravel Herd, TablePlus, and VS Code</li>
+                        <li>Everyday use of these tools to streamline development workflows and enhance productivity</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
         <div id="education" class="flex flex-col bg-white shadow-md rounded-xl w-[75vw] p-8 mt-6 mb-8 border border-gray-200 border-b-4 border-b-red-600">
@@ -89,25 +108,6 @@
                     <p class="text-lg font-semibold text-red-600">University of Georgia</p>
                     <p class="text-gray-500 font-medium">Bachelor of Science in Computer Science</p>
                     <div id="course-experience">
-                        <p class="text-gray-700 font-semibold mt-4">Course Experience</p>
-                        <ul class="list-disc ml-4 mt-2 space-y-2 text-gray-600">
-                            <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
-                            <li><strong>Web Development:</strong> Gained experience with HTML, CSS, JavaScript, and React, with a final web project using these skills.</li>
-                            <li><strong>Database Management:</strong> Learned about relational databases, hands-on experience with SQL, completing multiple full stack web projects.</li>
-                            <li><strong>Computer Networks:</strong> Studied network architecture, protocols, and security. Mixed this with private studies working towards my CCNA certification.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-row mt-4">
-                <div class="w-48 flex-shrink-0 flex items-center justify-center">
-                    <img src="images/ung.png" alt="placeholder" class="rounded-2xl h-36 p-4 object-contain">
-                </div>
-                <div class="p-6">
-                    <p class="text-lg font-semibold text-red-600">University of North Georgia</p>
-                    <p class="text-gray-500 font-medium">Associate of Science Majoring in Computer Science</p>
-                    <div id="course-experience-ung">
                         <p class="text-gray-700 font-semibold mt-4">Course Experience</p>
                         <ul class="list-disc ml-4 mt-2 space-y-2 text-gray-600">
                             <li><strong>Software Engineering:</strong> Studied software development methodologies and principles, discussed the Software Development Life Cycle (SDLC), and completed a final Spring Boot project.</li>
