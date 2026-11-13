@@ -1,0 +1,21 @@
+---
+import type { Education } from '../data/education';
+interface Props extends Education {}
+const { school, degree, logo, year, courses } = Astro.props;
+---
+<article class="card flex flex-col gap-5 p-8">
+  <div class="flex flex-wrap items-center gap-5">
+    <img src={`${import.meta.env.BASE_URL}${logo}`} alt="" width="64" height="64" loading="lazy" class="h-16 w-16 shrink-0 rounded-[10px] bg-[#EFEDE8] object-contain" />
+    <div class="flex min-w-0 flex-[1_1_240px] flex-col gap-1">
+      <h3 class="font-heading text-[22px] font-semibold">{school}</h3>
+      <div class="text-base text-muted">{degree}</div>
+    </div>
+    <div class="date-label">{year}</div>
+  </div>
+  {courses && <div class="grid grid-cols-[repeat(auto-fit,minmax(min(240px,100%),1fr))] gap-4">
+    {courses.map(course => <div class="flex flex-col gap-[6px] border-t-2 border-ink pt-3">
+      <h4 class="text-[15px] font-semibold">{course.title}</h4>
+      <p class="text-sm leading-[1.55] text-muted">{course.summary}</p>
+    </div>)}
+  </div>}
+</article>

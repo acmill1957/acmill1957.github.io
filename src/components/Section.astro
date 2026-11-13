@@ -1,0 +1,12 @@
+---
+interface Props { id: string; number: string; title: string }
+const { id, number, title } = Astro.props;
+---
+<section id={id} aria-labelledby={`${id}-title`} class:list={['flex flex-wrap gap-x-16 gap-y-8 pt-24', { 'pb-28': id === 'education' }]}>
+  <div class="flex flex-[1_1_220px] flex-col gap-3">
+    <div aria-hidden="true" class="font-mono text-[13px] text-accent">{number}</div>
+    <h2 id={`${id}-title`} class="font-heading text-4xl font-semibold tracking-[-0.02em]">{title}</h2>
+    <div aria-hidden="true" class="h-[3px] w-10 bg-accent"></div>
+  </div>
+  <div class="min-w-0 flex-[999_1_520px]"><slot /></div>
+</section>

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply m-0 bg-paper font-body text-[#1A1A1A]; line-height: normal; }
+  h2, h3, h4 { line-height: normal; }
+  a { @apply no-underline; }
+  a:focus-visible { outline: 3px solid #EE526B; outline-offset: 4px; }
+}
+
+@layer components {
+  /* Match the reference's 1120px content width plus its 24px outer padding. */
+  .site-container { @apply mx-auto w-full max-w-[1168px] px-6; }
+  .card { @apply rounded-[10px] border border-border bg-white; }
+  .date-label { @apply rounded bg-[#F2F0EB] px-[10px] py-[6px] font-mono text-[13px] text-muted; }
+}
