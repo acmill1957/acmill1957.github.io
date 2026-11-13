@@ -1,0 +1,17 @@
+---
+import { profile } from '../data/profile';
+interface Props {
+  links: { label: string; href: string }[];
+  contactHref: string;
+}
+const { links, contactHref } = Astro.props;
+---
+<header class="border-b border-[#2A2A2A] bg-ink">
+  <nav aria-label="Main navigation" class="site-container flex flex-wrap items-center justify-between gap-4 py-[18px]">
+    <a href="#top" aria-label={`${profile.name}, back to top`} class="font-heading text-lg font-bold tracking-[-0.01em] text-white">{profile.brand.first}<span class="text-accent">.</span>{profile.brand.last}</a>
+    <div class="flex flex-wrap gap-1">
+      {links.map(link => <a href={link.href} class="px-[14px] py-3 text-sm text-[#D4D4D4] hover:text-white">{link.label}</a>)}
+      <a href={contactHref} class="rounded-md bg-accent px-[18px] py-3 text-sm font-semibold text-white hover:bg-[#A60D26]">Contact</a>
+    </div>
+  </nav>
+</header>

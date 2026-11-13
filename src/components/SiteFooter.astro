@@ -1,0 +1,13 @@
+---
+import { profile, footerLinks } from '../data/profile';
+---
+<footer class="bg-ink text-[#9A9A9A]">
+  <div class="site-container flex flex-wrap items-center justify-between gap-4 py-10 text-sm">
+    <span>© {profile.copyrightYear} {profile.name}</span>
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      {footerLinks.map(link => link.href
+        ? <a href={link.href} class="text-[#D4D4D4] hover:text-white">{link.label}</a>
+        : <span class="text-[#D4D4D4]">{link.label}</span>)}
+    </div>
+  </div>
+</footer>

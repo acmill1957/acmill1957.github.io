@@ -1,0 +1,41 @@
+---
+import SiteNav from '../components/SiteNav.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import SkillCard from '../components/SkillCard.astro';
+import EducationEntry from '../components/EducationEntry.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { profile, navigation, ctas, sections } from '../data/profile';
+import { experience } from '../data/experience';
+import { skills } from '../data/skills';
+import { education } from '../data/education';
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={profile.summary} />
+    <title>{profile.pageTitle}</title>
+    <link rel="canonical" href={new URL(import.meta.env.BASE_URL, Astro.site)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" />
+  </head>
+  <body>
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-6 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:p-3 focus:text-ink">Skip to content</a>
+    <SiteNav links={navigation} contactHref={`mailto:${profile.email}`} />
+    <Hero {...profile} ctas={ctas} />
+    <main id="main-content" class="site-container" tabindex="-1">
+      {sections.map(section => <Section {...section}>
+        {section.id === 'about' && <p class="text-xl leading-[1.65] text-[#333333]">{profile.about}</p>}
+        {section.id === 'experience' && <div class="flex flex-col gap-5">{experience.map(job => <ExperienceCard {...job} />)}</div>}
+        {section.id === 'skills' && <div class="grid grid-cols-[repeat(auto-fit,minmax(min(260px,100%),1fr))] gap-5">{skills.map(skill => <SkillCard {...skill} />)}</div>}
+        {section.id === 'education' && <div class="flex flex-col gap-5">{education.map(entry => <EducationEntry {...entry} />)}</div>}
+      </Section>)}
+    </main>
+    <SiteFooter />
+  </body>
+</html>
